@@ -13,7 +13,7 @@ router.post('/register', async (req, res) => {
 		const user = await User.create(req.body);
 		return res.status(201).send(user);
 	} catch (error) {
-		return res.status(500).send({ error: 'Deu ruim bitho!' });
+		return res.status(500).send({ error: 'Não foi possivel Criar esse Usuario!' });
 	}
 });
 
